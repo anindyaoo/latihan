@@ -1,0 +1,127 @@
+:root {
+    --dark-blue: #22177A;
+    --purple: #09056b;
+    --grey-blue: #8EA3A6;
+    --yellow-soft: rgb(225, 225, 216);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--grey-blue);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--purple);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--yellow-soft);
+    font-weight: 700;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--yellow-soft);
+}
+
+/* Landing Page */
+.landing {
+    background-color: var(--yellow-soft);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.landing img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--purple);
+    color: #fff;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+}
+
+/* Menu Toko Bunga */
+.menu-section {
+    padding: 3rem 2rem;
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: #fff;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-item {
+    background-color: var(--purple);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--yellow-soft);
+}
+
+.menu-item p {
+    margin: 0;
+    color: #f0f0f0;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--purple);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--yellow-soft);
+    margin-top: 2rem;
+}
