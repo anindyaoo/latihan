@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="penberit" class="col-sm-2 col-form-label">Penberit</label>
+                    <label for="penberit" class="col-sm-2 col-form-label">Penerbit</label>
                     <div class="col-sm-10">
                         <input type="penerbit" class="form-control" id="penberit" name="penerbit">
                     </div>
