@@ -7,19 +7,24 @@ use App\Models\BooksModel;
 class Books extends BaseController
 {
     protected $BukuModel;
+    protected $BukuModel;
     public function __construct()
     {
+        $this->BukuModel = new BooksModel();
         $this->BukuModel = new BooksModel();
     }
 
     public function index()
     {
         // $buku = $this->BukuModel->findAll();
+        // $buku = $this->BukuModel->findAll();
         $data = [
             'title' => 'Daftar Buku',
             'buku' => $this->BukuModel->getBuku()
+            'buku' => $this->BukuModel->getBuku()
         ];
 
+        return view('books_view/index', $data);
         return view('books_view/index', $data);
     }
 
