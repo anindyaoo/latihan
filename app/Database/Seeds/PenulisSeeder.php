@@ -23,6 +23,8 @@ class PenulisSeeder extends Seeder
             $data = [
                 'name' => $faker->name,
                 'address' => $faker->address,
+                'email' => $faker->email,
+                'gender' => $faker->randomElement(['Laki-laki', 'Perempuan']),
                 'created_at' => Time::createFromTimestamp($faker->unixTime()),
                 'updated_at' => Time::now()
             ];
