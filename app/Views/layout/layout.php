@@ -18,20 +18,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Daftar Buku</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Detail Buku</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tambah Buku</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
+                <div class="navbar-nav">
+                    <a class="nav-link <?= ($active_nav ?? '') == 'index' ? 'active' : '' ?>" aria-current="page"
+                        href="<?= base_url('index'); ?>">Daftar Buku</a>
+                    <a class="nav-link <?= ($active_nav ?? '') == 'detail' ? 'active' : '' ?>"
+                        href="<?= base_url('detail'); ?>">Detail Buku</a>
+                    <a class="nav-link <?= ($active_nav ?? '') == 'tambah' ? 'active' : '' ?>"
+                        href="<?= base_url('buat'); ?>">Tambah Buku</a>
+                    <a class="nav-link" href="/penulis/">Daftar Penulis</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
             </div>
         </div>
     </nav>
