@@ -11,4 +11,13 @@ class PenulisModel extends Model
     protected $useTimestamps = true;
     protected $allowedfields = ['name', 'address'];
 
+    public function search($kataKunci)
+    {
+        // $builder = $this->table('penulis');
+        //$bulider->like('name', $kataKunci);
+
+        //return $builder;
+
+        return $this->table('penulis')->like('name', $kataKunci)->orlike(address, $kataKunci);
+    }
 }
