@@ -1,7 +1,8 @@
+<?= $this->extend('layout/layout'); ?>
 <?= $this->section('style') ?>
 <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 <?= $this->endSection() ?>
-<?= $this->extend('layout/layout'); ?>
+
 
 <?= $this->section('content'); ?>
 
